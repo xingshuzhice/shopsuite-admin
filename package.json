@@ -4,6 +4,7 @@
   "private": true,
   "author": "Xinze",
   "scripts": {
+    "local": "vue-cli-service serve --mode local",
     "dev": "vue-cli-service serve --mode dev",
     "build": "vue-cli-service build --mode prod",
     "test:unit": "vue-cli-service test:unit --detectOpenHandles",
