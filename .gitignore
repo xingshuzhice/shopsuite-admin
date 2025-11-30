@@ -44,3 +44,6 @@ public/video
 *.7z
 *.rar
 /.history
+
+
+admin/*

@@ -202,3 +202,14 @@ All rights reserved。<br>
 ShopSuite® 商标和著作权所有者为随商信息技术（上海）有限公司。<br>
 
 ---
+
+
+```bash
+
+Host ali-shop
+  HostName 114.55.150.140
+  User ceshi
+  IdentityFile ~/.ssh/id_rsa
+  Port 22
+
+```

@@ -199,7 +199,7 @@ export default defineComponent({
       checkedPageList: [],
       queryForm: {
         page: 1,
-        size: 10,
+        size: 100,
         material_name: '',
         gallery_id: 0,
         material_type: '',

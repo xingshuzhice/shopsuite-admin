@@ -6,6 +6,7 @@
   "scripts": {
     "local": "vue-cli-service serve --mode local",
     "dev": "vue-cli-service serve --mode dev",
+    "build:dev": "vue-cli-service build --mode dev",
     "build": "vue-cli-service build --mode prod",
     "test:unit": "vue-cli-service test:unit --detectOpenHandles",
     "lint": "vue-cli-service lint",
@@ -18,6 +19,8 @@
     "lint:eslint": "eslint {src,mock,library}/**/*.{vue,js,ts} --fix",
     "lint:prettier": "prettier {src,mock,library}/**/*.{html,vue,css,sass,scss,js,ts,md} --write",
     "lint:stylelint": "stylelint {src,mock,library}/**/*.{vue,css,sass,scss} --fix --cache --cache-location node_modules/.cache/stylelint/",
+    "deploy:lcoal": "scp -r ./admin/* local-frpxs:/home/zerone/code/shop/shopsuite-admin",
+    "deploy": "scp -r ./admin/* ali-shop:/var/www/shopsuite-admin",
     "module:install": "cnpm i",
     "module:reinstall": "rimraf node_modules&&npm run module:install",
     "module:update": "ncu -u --reject eslint-plugin-vue,eslint,eslint-config-prettie,@typescript-eslint/eslint-plugin,@typescript-eslint/parser --registry=https://registry.npmmirror.com&&npm run module:install",
